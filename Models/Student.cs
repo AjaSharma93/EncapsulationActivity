@@ -12,6 +12,10 @@ public class Student
         this._group = new StudentGroup(group);
     }
 
+    public string getName(){
+        return this._name;
+    }
+
     public char GetGrade()
     {
         return _grade.GetGrade();
