@@ -1,4 +1,3 @@
-
 public class Student
 {
     private string _name;
