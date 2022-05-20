@@ -1,0 +1,31 @@
+@startuml "Melody Music Company"
+
+class Student{
+    -name:string
+    -grade:StudentGrade
+    -group:StudentGroup
+    -SECRETNICKNAME:string
+    +GetName(): string
+    +GetGrade(): char
+    +GetGroup(): int
+    +UpgradeGrade():bool
+    +DowngradeGrade():bool
+}
+
+class StudentGrade{
+    -grade:char
+    -studentGrades:readonly List<char>
+    +GetGrade(): char
+    +UpgradeGrade():bool
+    +DowngradeGrade():bool
+}
+
+class StudentGroup{
+    -group:int
+    -studentGroup:readonly List<int>
+    +GetGroup(): int
+}
+
+Student *--- StudentGrade
+Student *--- StudentGroup
+@enduml
