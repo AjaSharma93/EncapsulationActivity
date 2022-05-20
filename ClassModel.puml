@@ -1,4 +1,4 @@
-@startuml "Melody Music Company"
+@startuml "Student Class Model"
 
 class Student{
     -name:string
